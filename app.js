@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Diễn đàn hỏi đáp, bình luận và chia sẻ lời giải tối ưu',
         'Bảng xếp hạng thành tích (Leaderboard) theo tuần/tháng'
       ],
-      tech: ['React.js', 'Node.js', 'Express', 'PostgreSQL', 'Tailwind CSS', 'Git Flow'],
+      tech: ['Java', 'MySQL', 'HTML5', 'CSS3', 'JavaScript', 'Git'],
       liveUrl: 'https://github.com/phucnvh3009',
       repoUrl: 'https://github.com/phucnvh3009'
     },
@@ -40,17 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
       repoUrl: 'https://github.com/phucnvh3009'
     },
     3: {
-      title: 'Agile Scrum Task Board — Quản Lý Sprint',
+      title: 'Task & Note Board — Bảng Quản Lý Công Việc',
       category: 'Web Application',
       categoryTag: 'webapp',
-      description: 'Ứng dụng quản trị công việc nhóm mô phỏng bảng Kanban theo phương pháp luận Agile/Scrum. Hỗ trợ tạo Sprint, quản lý User Story, gán nhãn độ ưu tiên và theo dõi trạng thái công việc trực quan.',
+      description: 'Ứng dụng quản trị công việc cá nhân với bảng Kanban trực quan. Hỗ trợ tạo task, phân loại việc cần làm, đang làm, hoàn thành, gắn mức độ ưu tiên và lưu trữ trạng thái thuận tiện.',
       features: [
-        'Kéo và thả (Drag & Drop) thẻ công việc mượt mà giữa các cột: To Do, In Progress, Review, Done',
-        'Tạo, chỉnh sửa, xóa User Story kèm mã vé tự sinh (vd: TASK-102)',
-        'Tính toán biểu đồ tiến độ Sprint Burndown Chart cơ bản',
+        'Kéo và thả (Drag & Drop) thẻ công việc mượt mà giữa các cột: Cần làm, Đang làm, Hoàn thành',
+        'Tạo, chỉnh sửa, xóa thẻ công việc kèm thời hạn và nhãn màu',
+        'Tìm kiếm và lọc công việc nhanh theo từ khóa',
         'Lưu trữ trạng thái làm việc offline với cơ chế đồng bộ LocalStorage'
       ],
-      tech: ['HTML5 Drag & Drop API', 'CSS Variables', 'JavaScript OOP', 'Agile Mindset'],
+      tech: ['HTML5 Drag & Drop API', 'CSS Variables', 'JavaScript', 'LocalStorage API'],
       liveUrl: 'https://github.com/phucnvh3009',
       repoUrl: 'https://github.com/phucnvh3009'
     },
@@ -183,9 +183,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.getElementById('typing-text');
   const roles = [
     'Software Engineering Student',
-    'Frontend & Web Developer',
-    'Git Flow & Agile Practitioner',
-    'Clean Code Enthusiast'
+    'Java & Web Developer',
+    'Git & GitHub Enthusiast',
+    'Clean Code Practitioner'
   ];
   let roleIndex = 0;
   let charIndex = 0;
