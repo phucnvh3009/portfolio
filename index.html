@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyễn Vũ Hoàng Phúc | Software Engineering & Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Vũ Hoàng Phúc - Sinh viên Kỹ thuật Phần mềm, đam mê phát triển Web hiện đại, Git Flow và Agile/Scrum." />
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Phuc<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Kỹ năng</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Dự án</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+        <button class="nav-close" id="nav-close" aria-label="Đóng menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Chuyển đổi giao diện sáng/tối">
+          <i class="fa-solid fa-sun icon-sun"></i>
+          <i class="fa-solid fa-moon icon-moon"></i>
+        </button>
+        <!-- Mobile Toggle Button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Mở menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <div class="hero-container container grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span> Sẵn sàng cho cơ hội mới
+          </div>
+          <h1 class="hero-title">
+            Xin chào, tôi là <br />
+            <span class="gradient-text">Nguyễn Vũ Hoàng Phúc</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="typing-text" id="typing-text">Software Engineering Student</span>
+          </h2>
+          <p class="hero-description">
+            Đam mê xây dựng các sản phẩm Web hiện đại, giao diện trực quan và tối ưu trải nghiệm người dùng. 
+            Ứng dụng quy trình làm việc chuẩn mực với <strong>Git, GitHub Flow</strong> và phương pháp luận <strong>Agile/Scrum</strong>.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>Xem dự án</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Liên hệ ngay</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <span class="social-label">Kết nối với tôi:</span>
+            <div class="social-icons">
+              <a href="https://github.com/phucnvh3009" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:phucnvh3009@gmail.com" class="social-link" title="Gửi Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="avatar-glow"></div>
+          <div class="avatar-card">
+            <img src="assets/profile.jpg" alt="Nguyễn Vũ Hoàng Phúc - Chân dung" class="avatar-img" />
+          </div>
+          <!-- Floating Status Cards -->
+          <div class="floating-badge badge-1">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <span class="float-title">Frontend & Web</span>
+              <span class="float-sub">Clean Code</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fa-brands fa-git-alt"></i>
+            <div>
+              <span class="float-title">Git & Agile</span>
+              <span class="float-sub">Team Workflow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Khám phá</span>
+          <h2 class="section-title">Về Bản Thân Tôi</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about-container grid">
+          <div class="about-image-col">
+            <div class="about-frame">
+              <img src="assets/profile.jpg" alt="Nguyễn Vũ Hoàng Phúc" class="about-img" />
+              <div class="frame-backdrop"></div>
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <h3 class="about-heading">Lập trình viên nhiệt huyết với tinh thần học hỏi không ngừng</h3>
+            <p class="about-desc">
+              Tôi là <strong>Nguyễn Vũ Hoàng Phúc</strong>, hiện đang theo học chuyên ngành <strong>Kỹ thuật Phần mềm (Software Engineering)</strong>. 
+              Với nền tảng tư duy logic vững vàng và sự say mê công nghệ, tôi tập trung phát triển các ứng dụng Web chất lượng cao, thân thiện và đáp ứng chuẩn SEO, hiệu năng.
+            </p>
+            <p class="about-desc">
+              Tôi tin rằng một phần mềm tốt không chỉ đến từ việc viết code chạy được, mà còn nằm ở khả năng cộng tác nhóm hiệu quả, tuân thủ các quy tắc quản lý phiên bản với <strong>Git/GitHub</strong> và quản trị dự án linh hoạt theo <strong>Scrum</strong>.
+            </p>
+
+            <div class="about-highlights grid">
+              <div class="highlight-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <h4 class="highlight-title">Học vấn</h4>
+                  <p class="highlight-desc">Chuyên ngành Kỹ thuật Phần mềm</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                  <h4 class="highlight-title">Định hướng</h4>
+                  <p class="highlight-desc">Frontend / Full-stack Developer</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-code-branch"></i>
+                <div>
+                  <h4 class="highlight-title">Kiểm soát mã nguồn</h4>
+                  <p class="highlight-desc">Git Flow, Trunk-based, PR/MR</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                  <h4 class="highlight-title">Phương pháp làm việc</h4>
+                  <p class="highlight-desc">Agile & Scrum, Code Review</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Năng lực</span>
+          <h2 class="section-title">Kỹ Năng Kỹ Thuật</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="skills-container grid">
+          <!-- Skill Group 1: Frontend -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3 class="skill-group-title">Frontend Development</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5 (Semantic)</li>
+              <li class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3 / Flexbox / Grid</li>
+              <li class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+              <li class="skill-pill"><i class="fa-brands fa-react"></i> React.js</li>
+              <li class="skill-pill"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</li>
+            </ul>
+          </div>
+
+          <!-- Skill Group 2: Backend & Database -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h3 class="skill-group-title">Backend & Database</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-pill"><i class="fa-brands fa-node"></i> Node.js</li>
+              <li class="skill-pill"><i class="fa-brands fa-java"></i> Java Core & OOP</li>
+              <li class="skill-pill"><i class="fa-solid fa-network-wired"></i> RESTful APIs</li>
+              <li class="skill-pill"><i class="fa-solid fa-database"></i> SQL / PostgreSQL / MySQL</li>
+              <li class="skill-pill"><i class="fa-solid fa-leaf"></i> MongoDB</li>
+            </ul>
+          </div>
+
+          <!-- Skill Group 3: Tools & Methodology -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <h3 class="skill-group-title">Tools & Engineering</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git (CLI, Rebase, Flow)</li>
+              <li class="skill-pill"><i class="fa-brands fa-github"></i> GitHub (PR, Actions, Pages)</li>
+              <li class="skill-pill"><i class="fa-solid fa-code"></i> VS Code & Extensions</li>
+              <li class="skill-pill"><i class="fa-solid fa-diagram-project"></i> Agile / Scrum / Jira</li>
+              <li class="skill-pill"><i class="fa-solid fa-vial-circle-check"></i> Code Review & Clean Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Thực tế</span>
+          <h2 class="section-title">Dự Án Tiêu Biểu</h2>
+          <div class="title-bar"></div>
+          <p class="section-subtitle">Dưới đây là một số dự án học tập và thực hành thực tế. Bạn có thể bấm vào từng dự án để xem chi tiết.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="webapp">Web Application</button>
+          <button class="filter-btn" data-filter="frontend">Frontend UI</button>
+          <button class="filter-btn" data-filter="tools">Công cụ & Tools</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="webapp" data-id="1">
+            <div class="project-banner banner-1">
+              <div class="banner-overlay">
+                <button class="btn-quick-view"><i class="fa-solid fa-eye"></i> Xem chi tiết</button>
+              </div>
+              <span class="project-badge">Web App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FCode Platform — Nền Tảng Học Lập Trình</h3>
+              <p class="project-summary">Hệ thống học tập và trao đổi bài tập lập trình trực tuyến cho sinh viên, hỗ trợ chấm bài tự động và thảo luận nhóm.</p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Tailwind</span>
+                <span>Git Flow</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="frontend" data-id="2">
+            <div class="project-banner banner-2">
+              <div class="banner-overlay">
+                <button class="btn-quick-view"><i class="fa-solid fa-eye"></i> Xem chi tiết</button>
+              </div>
+              <span class="project-badge">Frontend UI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Minimalist E-Commerce — Cửa Hàng Thời Trang</h3>
+              <p class="project-summary">Giao diện web bán hàng tối giản, giỏ hàng tương tác nhanh, lọc sản phẩm theo mức giá và danh mục không cần tải lại trang.</p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS Grid</span>
+                <span>Vanilla JS</span>
+                <span>LocalStorage</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="webapp" data-id="3">
+            <div class="project-banner banner-3">
+              <div class="banner-overlay">
+                <button class="btn-quick-view"><i class="fa-solid fa-eye"></i> Xem chi tiết</button>
+              </div>
+              <span class="project-badge">Web App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Agile Scrum Task Board — Quản Lý Sprint</h3>
+              <p class="project-summary">Bảng Kanban kéo thả trực quan theo quy trình Scrum (To Do, In Progress, Code Review, Done) kèm thống kê tiến độ.</p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Drag & Drop API</span>
+                <span>CSS Variables</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="frontend" data-id="4">
+            <div class="project-banner banner-4">
+              <div class="banner-overlay">
+                <button class="btn-quick-view"><i class="fa-solid fa-eye"></i> Xem chi tiết</button>
+              </div>
+              <span class="project-badge">Frontend UI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Weather Scope — Ứng Dụng Dự Báo Thời Tiết</h3>
+              <p class="project-summary">Tra cứu thời tiết thời gian thực theo định vị GPS và tên thành phố toàn cầu với biểu đồ nhiệt độ 7 ngày trực quan.</p>
+              <div class="project-tags">
+                <span>OpenWeather API</span>
+                <span>Fetch API</span>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-category="tools" data-id="5">
+            <div class="project-banner banner-5">
+              <div class="banner-overlay">
+                <button class="btn-quick-view"><i class="fa-solid fa-eye"></i> Xem chi tiết</button>
+              </div>
+              <span class="project-badge">Công cụ</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Git Branch Visualizer — Mô Phỏng Cây Nhánh</h3>
+              <p class="project-summary">Công cụ tương tác đồ họa trực quan hóa sự khác biệt giữa `git merge` và `git rebase`, hỗ trợ người mới học Git dễ hình dung.</p>
+              <div class="project-tags">
+                <span>Canvas / SVG</span>
+                <span>Algorithm</span>
+                <span>Git Logic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card" data-category="webapp" data-id="6">
+            <div class="project-banner banner-6">
+              <div class="banner-overlay">
+                <button class="btn-quick-view"><i class="fa-solid fa-eye"></i> Xem chi tiết</button>
+              </div>
+              <span class="project-badge">Web App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Finance Tracker — Quản Lý Thu Chi</h3>
+              <p class="project-summary">Ứng dụng theo dõi ngân sách cá nhân, phân loại thu chi thông minh và trực quan hóa tỷ trọng chi tiêu bằng biểu đồ tròn.</p>
+              <div class="project-tags">
+                <span>Chart.js</span>
+                <span>LocalStorage</span>
+                <span>Modern UI</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Kết nối</span>
+          <h2 class="section-title">Liên Hệ Với Tôi</h2>
+          <div class="title-bar"></div>
+          <p class="section-subtitle">Bạn có ý tưởng dự án hoặc cơ hội việc làm? Đừng ngần ngại để lại lời nhắn cho tôi nhé!</p>
+        </div>
+
+        <div class="contact-container grid">
+          <!-- Info Column -->
+          <div class="contact-info">
+            <h3 class="info-heading">Thông tin liên hệ</h3>
+            <p class="info-sub">Tôi luôn sẵn lòng trao đổi về các dự án phần mềm, công nghệ web hoặc chia sẻ kinh nghiệm học tập.</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <span class="info-label">Họ và tên</span>
+                  <span class="info-value">Nguyễn Vũ Hoàng Phúc</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="info-label">Email</span>
+                  <a href="mailto:phucnvh3009@gmail.com" class="info-value link-accent">phucnvh3009@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <span class="info-label">GitHub</span>
+                  <a href="https://github.com/phucnvh3009" target="_blank" rel="noopener noreferrer" class="info-value link-accent">github.com/phucnvh3009</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="info-label">Khu vực</span>
+                  <span class="info-value">Việt Nam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="form-name">Họ và tên của bạn</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="form-name" required placeholder="Ví dụ: Trần Minh Quân" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Email liên hệ</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="form-email" required placeholder="email@example.com" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Chủ đề</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="form-subject" required placeholder="Cơ hội hợp tác / Hỏi đáp dự án..." />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Nội dung tin nhắn</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="form-message" rows="4" required placeholder="Nội dung bạn muốn trao đổi..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                <span>Gửi Tin Nhắn</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Phuc<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Tạo dựng giá trị từ từng dòng mã sạch và tư duy chuẩn mực.</p>
+      </div>
+
+      <div class="footer-center">
+        <p class="copyright">
+          © 2026 <strong>Nguyễn Vũ Hoàng Phúc</strong>. All rights reserved.
+        </p>
+        <p class="footer-sub">Built with HTML5, CSS3, Vanilla JS & deployed via GitHub Pages.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close" aria-label="Đóng cửa sổ chi tiết">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content" id="modal-content">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span class="toast-msg">Cảm ơn bạn! Tin nhắn đã được gửi thành công.</span>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
